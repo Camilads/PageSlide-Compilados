@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(120deg, #7ba0f0, beige, #06232fea);
+    overflow: hidden;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    background: rgba(2, 22, 63, 0.9);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: rgba(42, 82, 163, 0.9);
+}
+
+.container {
+    display: none;
+    max-width: 600px;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container.active {
+    display: block; /* Exibe apenas o painel ativo */
+}
+
+.apresenta {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-style: italic;
+    white-space: pre-wrap;
+    min-height: 100px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.active {
+    display: block;
+}
+
+.btn {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: "Courier New", monospace;
+}
+
+.btn:hover {
+    background-color: #005a9e;
+}
